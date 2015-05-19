@@ -32,6 +32,11 @@ GEM
       execjs
       json
     awesome_print (1.6.1)
+    backbone-on-rails (1.1.2.1)
+      eco
+      ejs
+      jquery-rails
+      railties
     bootstrap-sass (3.3.4.1)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
@@ -46,6 +51,12 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
+    eco (1.0.0)
+      coffee-script
+      eco-source
+      execjs
+    eco-source (1.1.0.rc.1)
+    ejs (1.1.1)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -172,6 +183,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
+  backbone-on-rails
   bootstrap-sass (~> 3.3.4)
   coffee-rails (~> 4.0.0)
   guard-livereload

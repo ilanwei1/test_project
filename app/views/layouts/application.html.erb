@@ -7,9 +7,46 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="btn"></div>
 
-<%= yield %>
+<script type="text/template" id="message">
+    <%% _.each(msg, function(m)  { %>
+      <tr>
+  		<td>
+  			<%%= m.user_id %>
+  		</td>
+	      <td>
+	      	<%%= m.created_at %>
+	      </td>
+	      <td>
+	      	<%%= m.content %>
+	      </td>
+
+      </tr>
+    <%% }); %>
+</script>
+
+
+<div id="chatArea">
+    <div>
+    	<table class="table table-bordered">
+
+    	<th>user_id</th>
+    	<th>created</th>
+    	<th>content</th>
+    	<tr>
+    		<td colspan="3">
+    				<table class="table table-bordered" id="chatHistory">
+    				</table>
+    		</td>
+    	</tr>
+    	</table>
+    </div>
+    <form method="post" action="#" id= 'chatForm' name="newMessage" onsubmit="return false">
+      <input name= 'newMessageString' type="text" />
+      <input type="submit" value='send'/>
+    </form>
+</div>
 
 </body>
+
 </html>

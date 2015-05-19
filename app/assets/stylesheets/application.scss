@@ -15,4 +15,19 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ textarea {
+	 height:500px;
+	 width:500px;
+}
+td{
+	text-align: left;
+	width: 33%;
+}
+input[type="text"] {
+ width: 450px;
+}
+#chatArea {
+ width:600px;
+ margin: 10px auto;
+}
 
